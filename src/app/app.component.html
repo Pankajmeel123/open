@@ -47,16 +47,16 @@
                         <div id="affiliate" class="ag-calculator-block">
                           <div class="js-calculator_input-wrap ag-calculator_input-wrap">
 	                          <div class="ag-calculator_title">Monthly Income</div>
-                            <p>{{monthlyinc|currency:'INR':true:'0.0'}}</p>
+                            <p>{{monthlyinc|currency:'INR':'symbol':'0.0'}}</p>
                             <input (ngModelChange)="monthlyexp > monthlyinc?monthlyexp = 0 :''" [(ngModel)]="monthlyinc" class="range" step="1" type="range" name="level1-clients" min="100000" max="300000">
                           </div>
-                          <div class="ag-calculator_title colurbxleft">{{'100000'|currency:'INR':true:'0.0'}} </div>
-                          <div class="ag-calculator_title colurbx">{{'300000'|currency:'INR':true:'0.0'}} </div>
+                          <div class="ag-calculator_title colurbxleft">{{'100000'|currency:'INR':'symbol':'0.0'}} </div>
+                          <div class="ag-calculator_title colurbx">{{'300000'|currency:'INR':'symbol':'0.0'}} </div>
                         </div>
                         <div id="affiliate" class="ag-calculator-block">
                           <div class="js-calculator_input-wrap ag-calculator_input-wrap">
 	                          <div class="ag-calculator_title">Monthly Expenses</div>
-                            <p>{{monthlyexp|currency:'INR':true:'0.0'}}</p>
+                            <p>{{monthlyexp|currency:'INR':'symbol':'0.0'}}</p>
                             <input [(ngModel)]="monthlyexp" class="range" step="1" type="range" name="level2-clients" min="0" [max]="monthlyinc" value="0">
                           </div>
                         </div>
@@ -93,10 +93,10 @@
                     <div class="bgright_bx">
                       <div class="loan_amount">
                         <h3>Loan Amount</h3>
-                        <h4>{{'100000'|currency:'INR':true:'0.0'}}</h4>
+                        <h4>{{'100000'|currency:'INR':'symbol':'0.0'}}</h4>
                       </div>
                       <h3>Your EMI will be</h3>
-                      <h4>{{'15000'|currency:'INR':true:'0.0'}}</h4>
+                      <h4>{{'15000'|currency:'INR':'symbol':'0.0'}}</h4>
                       <button>Get Money</button>
                     </div>
                   </div>

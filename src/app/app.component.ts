@@ -6,7 +6,6 @@ import { Component, HostListener } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'open';
   monthlyinc:number = 0;
   monthlyexp:number = 0;
   haveLoan:boolean = true;
