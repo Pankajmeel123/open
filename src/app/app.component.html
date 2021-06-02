@@ -48,7 +48,7 @@
                           <div class="js-calculator_input-wrap ag-calculator_input-wrap">
 	                          <div class="ag-calculator_title">Monthly Income</div>
                             <p>{{monthlyinc|currency:'INR':true:'0.0'}}</p>
-                            <input (ngModelChange)="monthlyexp = 0" [(ngModel)]="monthlyinc" class="range" step="1" type="range" name="level1-clients" min="100000" max="300000">
+                            <input (ngModelChange)="monthlyexp > monthlyinc?monthlyexp = 0 :''" [(ngModel)]="monthlyinc" class="range" step="1" type="range" name="level1-clients" min="100000" max="300000">
                           </div>
                           <div class="ag-calculator_title colurbxleft">{{'100000'|currency:'INR':true:'0.0'}} </div>
                           <div class="ag-calculator_title colurbx">{{'300000'|currency:'INR':true:'0.0'}} </div>

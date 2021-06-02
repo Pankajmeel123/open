@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'open';
   monthlyinc:number = 0;
   monthlyexp:number = 0;
-  haveLoan:boolean = false;
+  haveLoan:boolean = true;
   isSticky:any;
 
   @HostListener('window:scroll', ['$event'])
